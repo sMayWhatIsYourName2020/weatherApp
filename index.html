@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <main class="page__main">
+    <section class="weather-now">
+      <form class="form">
+        <label for="city" class="city-label visually-hidden">Введите город</label>
+        <input class="city" type="text" id="city" placeholder="Enter the city">
+        <button class="form__button" type="submit"></button>
+      </form>
+      <p class="degrees"><span data-weather="degrees-current"></span>°</p>
+      <p class="weather_headling" data-headling="main"></p>
+      <p class="weather_description" data-description="description"></p>
+      <dl class="today-stat">
+        <dd class="description description-degree"><span data-weather="feels-like-current"></span>°
+        </dd>
+        <dt class="termin">Feels like</dt>
+      </dl>
+      <dl class="today-stat">
+        <dd class="description"><span data-weather="humidity-current"></span>%</dd>
+        <dt class="termin">Humidity</dt>
+      </dl>
+      <dl class="today-stat">
+        <dd class="description"><span data-weather="wind-speed-current"></span>M/S</dd>
+        <dt class="termin">Wind speed</dt>
+      </dl>
+      <dl class="today-stat">
+        <dd class="description"><span data-weather="pressure-current"></span>MM</dd>
+        <dt class="termin">Pressure</dt>
+      </dl>
+    </section>
+    <section class="week">
+      <h2 class="week__headling">This week</h2>
+      <div class="week__inner">
+        <div class="week__day day">
+          <h3 class="week__name-day" data-weather="headling"></h3>
+          <img class="week__img" data-weather="img" width="100" height="100" alt="Weather icon">
+          <p class="day__degrees"><span data-weather="degrees"></span>°</p>
+          <dl class="info">
+            <dd class="description"><span data-weather="humidity"></span>%</dd>
+            <dt class="termin">Humidity</dt>
+            <dd class="description"><span data-weather="wind-speed"></span>M/S</dd>
+            <dt class="termin">Wind speed</dt>
+            <dd class="description"><span data-weather="pressure"></span>MM</dd>
+            <dt class="termin">Pressure</dt>
+          </dl>
+        </div>
+        <div class="week__day day">
+          <h3 class="week__name-day" data-weather="headling"></h3>
+          <img class="week__img" data-weather="img" width="100" height="100" alt="Weather icon">
+          <p class="day__degrees"><span data-weather="degrees"></span>°</p>
+          <dl class="info">
+            <dd class="description"><span data-weather="humidity"></span>%</dd>
+            <dt class="termin">Humidity</dt>
+            <dd class="description"><span data-weather="wind-speed"></span>M/S</dd>
+            <dt class="termin">Wind speed</dt>
+            <dd class="description"><span data-weather="pressure"></span>MM</dd>
+            <dt class="termin">Pressure</dt>
+          </dl>
+        </div>
+        <div class="week__day day">
+          <h3 class="week__name-day" data-weather="headling"></h3>
+          <img class="week__img" data-weather="img" width="100" height="100" alt="Weather icon">
+          <p class="day__degrees"><span data-weather="degrees"></span>°</p>
+          <dl class="info">
+            <dd class="description"><span data-weather="humidity"></span>%</dd>
+            <dt class="termin">Humidity</dt>
+            <dd class="description"><span data-weather="wind-speed"></span>M/S</dd>
+            <dt class="termin">Wind speed</dt>
+            <dd class="description"><span data-weather="pressure"></span>MM</dd>
+            <dt class="termin">Pressure</dt>
+          </dl>
+        </div>
+        <div class="week__day day">
+          <h3 class="week__name-day" data-weather="headling"></h3>
+          <img class="week__img" data-weather="img" width="100" height="100" alt="Weather icon">
+          <p class="day__degrees"><span data-weather="degrees"></span>°</p>
+          <dl class="info">
+            <dd class="description"><span data-weather="humidity"></span>%</dd>
+            <dt class="termin">Humidity</dt>
+            <dd class="description"><span data-weather="wind-speed"></span>M/S</dd>
+            <dt class="termin">Wind speed</dt>
+            <dd class="description"><span data-weather="pressure"></span>MM</dd>
+            <dt class="termin">Pressure</dt>
+          </dl>
+        </div>
+        <div class="week__day day">
+          <h3 class="week__name-day" data-weather="headling"></h3>
+          <img class="week__img" data-weather="img" width="100" height="100" alt="Weather icon">
+          <p class="day__degrees"><span data-weather="degrees"></span>°</p>
+          <dl class="info">
+            <dd class="description"><span data-weather="humidity"></span>%</dd>
+            <dt class="termin">Humidity</dt>
+            <dd class="description"><span data-weather="wind-speed"></span>M/S</dd>
+            <dt class="termin">Wind speed</dt>
+            <dd class="description"><span data-weather="pressure"></span>MM</dd>
+            <dt class="termin">Pressure</dt>
+          </dl>
+        </div>
+        <div class="week__day day">
+          <h3 class="week__name-day" data-weather="headling"></h3>
+          <img class="week__img" data-weather="img" width="100" height="100" alt="Weather icon">
+          <p class="day__degrees"><span data-weather="degrees"></span>°</p>
+          <dl class="info">
+            <dd class="description"><span data-weather="humidity"></span>%</dd>
+            <dt class="termin">Humidity</dt>
+            <dd class="description"><span data-weather="wind-speed"></span>M/S</dd>
+            <dt class="termin">Wind speed</dt>
+            <dd class="description"><span data-weather="pressure"></span>MM</dd>
+            <dt class="termin">Pressure</dt>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
