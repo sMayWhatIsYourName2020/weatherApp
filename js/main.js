@@ -23,9 +23,8 @@ const hPaToMM = (data) => Math.round(data * 0.75);
 
 
 const changeCurrentData = (obj) => {
-  console.log(obj);
   degreeHeadling.textContent = Math.round(obj.current.temp);
-  bgImage.style.backgroundImage = `URL('/assets/images/${obj.current.weather[0].icon}.svg')`;
+  bgImage.style.backgroundImage = `URL('./assets/images/${obj.current.weather[0].icon}.svg')`;
   weatherHeadling.textContent = obj.current.weather[0].main;
   weatherDescription.textContent = obj.current.weather[0].description;
   humidity.textContent = obj.current.humidity;
@@ -37,7 +36,6 @@ const changeCurrentData = (obj) => {
 const changeWeekData = (arr) => {
   for (let i = 1; i < arr.length - 1; i++) {
     const elem = arr[i];
-    console.log(elem);
     const newHumidity = Array.from(humidityWeek)[i - 1];
     newHumidity.textContent = elem.humidity;
     const newwindSpeed = Array.from(windSpeedWeek)[i - 1];
@@ -47,7 +45,7 @@ const changeWeekData = (arr) => {
     const newWeatherWeekHeadling = Array.from(weatherWeekHeadlings)[i - 1];
     newWeatherWeekHeadling.textContent = weekDays[new Date(elem.dt * 1000).getDay()];
     const newImage = Array.from(imageWeek)[i - 1];
-    newImage.setAttribute('src', `/assets/images/${elem.weather[0].icon}.svg`);
+    newImage.setAttribute('src', `./assets/images/${elem.weather[0].icon}.svg`);
     const newDegrees = Array.from(degreesWeek)[i - 1];
     newDegrees.textContent = Math.round(elem.temp.day);
   }
@@ -99,7 +97,5 @@ button.addEventListener('click', (event) => {
   const text = input.value;
   toLatAndLon(text);
 });
-
-input.addEventListener('focus')
 
 
